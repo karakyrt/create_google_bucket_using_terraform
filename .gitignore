@@ -1,2 +1,2 @@
 *.json
-*.tfvars
+*config.tfvars
