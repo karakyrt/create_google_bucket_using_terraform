@@ -11,7 +11,7 @@ resource "google_storage_bucket" "COLDLINE" {
 }
 
 resource "google_storage_bucket_object" "text" {
-  name = "zin.txt"
+  name = "test-file.txt"
   content = "hi people"
   bucket  = "${google_storage_bucket.COLDLINE.name}"
 }
