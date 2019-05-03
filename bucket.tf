@@ -5,13 +5,15 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "COLDLINE" {
-  name   = "kryto"
+  name   = "kran"
   storage_class = "COLDLINE" 
   location = "asia-northeast1"
 }
 
 resource "google_storage_bucket_object" "text" {
-  name = "test-file.txt"
+  name = "lexus"
   content = "hi people"
   bucket  = "${google_storage_bucket.COLDLINE.name}"
+
 }
+
